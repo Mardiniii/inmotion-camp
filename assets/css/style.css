@@ -109,7 +109,7 @@ img { max-width: 100%; }
 
 .section-description {
 	margin-top: 60px;
-    padding-bottom: 10px;
+  padding-bottom: 10px;
 }
 
 .section-description p {
@@ -840,7 +840,23 @@ button.btn, .btn-link-1 {
 	font-size: 13px;
 	color: #7cb4d9;
 }
-.contact-us-container {
-	padding-top: 70px;
-	padding-bottom: 40px;
+footer {
+	padding-top: 0;
+	padding-bottom: 0;
+}
+div.features-container.section-container {
+	padding-bottom: 0;
+}
+
+div.contact-form, div.form-top{
+	border: 1px solid gray;	
+}
+
+div.contact-form{
+	border-top: none;
+	margin-bottom: 50px;
+}
+
+div.features {
+	margin-top: 60px;
 }
