@@ -85,11 +85,13 @@
 						<div class="form-top-right"> <span aria-hidden="true" class="typcn typcn-bell"></span> </div>
 					</div>
 					<div class="form-bottom">
-						<form role="form" action="" method="post">
+						<form action="http://formspree.io/info@inmotion.camp" method="post">
 							<div class="form-group">
 								<label class="sr-only" for="form-email">Email</label>
-								<input type="text" name="form-email" placeholder="Ingresa aqui tu email o correo electronico..." class="form-email form-control" id="form-email">
+								<input type="text" name="_replyto" placeholder="Ingresa aqui tu email o correo electronico..." class="form-email form-control" id="form-email">
 							</div>
+							<input type="hidden" name="_next" value="http://inmotion.camp" />
+			      	<input type="hidden" name="_subject" value="Hay un nuevo interesado en saber sobre los proximos Bootcamp - Inmotion Camp" />
 							<button type="submit" class="btn">Registrarme</button>
 						</form>
 					</div>
