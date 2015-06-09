@@ -305,7 +305,7 @@ ul.navbar-nav {
 .form-top-left {
 	float: left;
 	width: 75%;
-	padding-top: 25px;
+	padding-top: 13px;
 }
 
 .form-top-left h3 { margin-top: 0; }
@@ -797,16 +797,13 @@ footer {
 }
 button.btn, .btn-link-1 {
 	position: relative;
-	height: 60px;
-    margin: 0;
-    padding: 0 30px;
+	height: 50px;
     vertical-align: middle;
     background: #69d62f;
     border: 0;
     font-family: 'Roboto', sans-serif;
     font-size: 18px;
     font-weight: 300;
-    line-height: 60px;
     color: #fff;
 	text-transform: uppercase;
     -moz-border-radius: 4px; -webkit-border-radius: 4px; border-radius: 4px;
@@ -859,4 +856,58 @@ div.contact-form{
 
 div.features {
 	margin-top: 60px;
+}
+
+div.#mediaModal {
+	margin-top: 75px;
+}
+
+div.modal-body {
+	padding: 0;
+}
+
+div.modal-content {
+	margin: 0 !important;
+}
+
+div.modal-dialog {
+	margin-top: 65px;
+}
+
+a.video-link {
+	padding: 0;
+	border: 2px solid white;
+	border-radius: 5px;
+}
+
+div.video-intro {
+	height: 89vh;
+	padding-top: 0;
+	padding-bottom: 40px;
+}
+
+h1.video-text {
+	font-size: 48px;
+}
+
+a.video-img {
+	margin-top: 50px;
+	margin-bottom: 65px;
+}
+
+div.form-box {
+	padding: 0;
+}
+
+h4.form-video-text {
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+h1.final-form-title {
+	color: white;
+	font-weight: 300;
+}
+
+div.final-form-title {
+	margin-top: 75px;
 }
