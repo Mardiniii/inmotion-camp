@@ -918,7 +918,7 @@ div.final-form-title div.form-top {
 		font-size: 30px;
 	}
   div.video-intro {
-  	height: 75vh;
+  	height: 500px;
   }
 }
 
@@ -933,4 +933,14 @@ div#final_form{
 
 div.modal-body {
 	height: 560px;
+}
+
+div.section-container-gray-bg {
+	padding-top: 60px;
+}
+
+h1.second_section_title {
+	font-size: 50px;
+	font-weight: 300;
+	padding-bottom: 50px;
 }
