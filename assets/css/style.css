@@ -930,3 +930,7 @@ img#final_logo {
 div#final_form{
 	margin-top: 70px;
 }
+
+div.modal-body {
+	height: 560px;
+}
