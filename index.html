@@ -87,7 +87,7 @@
 						<input type="hidden" name="_next" value="http://inmotion.camp" />
 		      	<input type="hidden" name="_subject" value="Hay un nuevo interesado en saber sobre los proximos Bootcamp - Inmotion Camp" />
 		      	<div class="form-group col-sm-3 text-center">
-							<button type="submit" class="btn">Registrarme</button>
+							<button type="submit" class="btn form-submit-button">Registrarme</button>
 						</div>
 					</form>
 				</div>
@@ -98,7 +98,7 @@
 
 <!-- Top content -->
 <div class="top-content">
-	<div class="inner-bg start-container">
+	<div class="inner-bg start-container section-container-gray-bg">
 		<div class="container">
 			<div class="row">
 				<div class="col-sm-8 col-sm-offset-2 text">
@@ -240,13 +240,13 @@
 <div class="col-sm-12 form-box wow finalform-container fadeInUp final-form-title">
 	<div class="form-top">
 		<div class="text-center">			
-			<img src="http://i592.photobucket.com/albums/tt5/Mardini03/Logo%20Gigante.png" alt="" id="final_logo">	
+			<img src="http://i592.photobucket.com/albums/tt5/Mardini03/logo_2.png" alt="" id="final_logo">	
 			<h2>"Nuestra Misión es hacer de la Inteligencia Emocional un tema accesible para TODOS"</h2>
 			<!-- <div class="divider-1 wow fadeInUp"><span></span></div> -->
 		</div>
 
 		<div class="form-top-left" id="final_form">
-			<h1 class="final-form-title">¿Qué esperas?</h1>
+			<h1 class="final-form-title text-center">¿Qué esperas?</h1>
 			<p class="text-center">Ingresa ya tu email para recibir toda la información de nuestro próximo Bootcamp en Colombia y conocer como puedes participar. Cupos Limitados!</p>
 		</div>
 		<form action="http://formspree.io/inmotionbootcamp@gmail.com" method="post">
@@ -257,7 +257,7 @@
 			<input type="hidden" name="_next" value="http://inmotion.camp" />
 	  	<input type="hidden" name="_subject" value="Hay un nuevo interesado en saber sobre los proximos Bootcamp - Inmotion Camp" />
 	  	<div class="form-group col-sm-3 text-center">
-				<button type="submit" class="btn">Registrarme</button>
+				<button type="submit" class="btn form-submit-button">Registrarme</button>
 			</div>
 		</form>
 	</div>
@@ -326,6 +326,16 @@
 		$('#mediaModal .modal-body').html('');
 	});
 	 
+	});
+
+	$('form').on('click', 'button.form-submit-button', function(){
+		var inputEmail = $(this).parent().parent().find('input[type=text]').val();
+		console.log(inputEmail);
+		if( inputEmail == ""){
+			alert("Porfavor ingrese una dirección de correo electrónico para confirmar su registro");
+		} else {
+			alert("Su solicitud de registro ha sido enviada, nos pondremos en contacto en el menor tiempo posible. Muchas Gracias!");
+		}
 	});
 </script>
 
