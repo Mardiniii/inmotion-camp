@@ -83,7 +83,7 @@ img { max-width: 100%; }
 
 .section-container {
     margin: 0 auto;
-    padding-bottom: 80px;
+    padding-bottom: 0;
 }
 
 .section-container-gray-bg {
@@ -881,9 +881,9 @@ a.video-link {
 }
 
 div.video-intro {
-	height: 89vh;
+	height: 70vh;
 	padding-top: 0;
-	padding-bottom: 40px;
+	padding-bottom: 0;
 }
 
 h1.video-text {
@@ -892,7 +892,7 @@ h1.video-text {
 
 a.video-img {
 	margin-top: 50px;
-	margin-bottom: 65px;
+	padding-bottom: 0;
 }
 
 div.form-box {
@@ -908,6 +908,16 @@ h1.final-form-title {
 	font-weight: 300;
 }
 
-div.final-form-title {
-	margin-top: 75px;
+div.final-form-title div.form-top {
+	height: 100vh;
+	margin-top: 0;
+}
+
+@media screen and (max-width: 487px) {
+	h1.video-text {
+		font-size: 30px;
+	}
+  div.video-intro {
+  	height: 75vh;
+  }
 }
