@@ -93,8 +93,8 @@ img { max-width: 100%; }
 	color: #fff;
 }
 
-/*.section-container-image-bg, 
-.section-container-image-bg h2, 
+/*.section-container-image-bg,
+.section-container-image-bg h2,
 .section-container-image-bg h3 {
 	color: #fff;
 }*/
@@ -162,7 +162,7 @@ img { max-width: 100%; }
     color: #fff;
     -moz-border-radius: 4px; -webkit-border-radius: 4px; border-radius: 4px;
 }
-.btn-link-2:hover, .btn-link-2:focus, 
+.btn-link-2:hover, .btn-link-2:focus,
 .btn-link-2:active, .btn-link-2:active:focus { outline: 0; opacity: 0.6; background: rgba(0, 0, 0, 0.3); color: #fff; }
 
 
@@ -225,8 +225,8 @@ img { max-width: 100%; }
 }
 .modal-footer button:hover { outline: 0; opacity: 0.6; background: none; border: 1px solid #888; color: #888; }
 
-.modal-footer button:focus, .modal-footer button:active:focus, .modal-footer button.active:focus { 
-	outline: 0; opacity: 0.6; background: none; border: 1px solid #888; color: #888; 
+.modal-footer button:focus, .modal-footer button:active:focus, .modal-footer button.active:focus {
+	outline: 0; opacity: 0.6; background: none; border: 1px solid #888; color: #888;
 	-moz-box-shadow: none; -webkit-box-shadow: none; box-shadow: none;
 }
 
@@ -338,7 +338,7 @@ ul.navbar-nav {
 }
 
 .form-bottom form .form-links a { color: #888; }
-.form-bottom form .form-links a:hover, 
+.form-bottom form .form-links a:hover,
 .form-bottom form .form-links a:focus { color: #888; border-bottom: 1px dotted #888; }
 
 
@@ -846,7 +846,7 @@ div.features-container.section-container {
 }
 
 div.contact-form, div.form-top{
-	border: 1px solid gray;	
+	border: 1px solid gray;
 }
 
 div.contact-form{
@@ -909,7 +909,7 @@ h1.final-form-title {
 }
 
 div.final-form-title div.form-top {
-	height: 100vh;
+	height: 100%;
 	margin-top: 0;
 }
 
