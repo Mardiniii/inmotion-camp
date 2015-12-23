@@ -43,6 +43,19 @@
 
 <body>
 
+<!-- modal -->
+<div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Su solicitud de registro ha sido enviada, nos pondremos en contacto en el menor tiempo posible. Muchas Gracias!</h4>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- fin modal -->
+
 <!-- Loader -->
 <div class="loader">
 	<div class="loader-img"></div>
@@ -96,20 +109,9 @@
 <div id="mlb2-1476509" class="ml-subscribe-form">
 <div class="ml-vertical-align-center">
     
-    <div class="subscribe-form ml-block-success" style="display:none">
-        <div class="form-section">
-            <h4></h4>
-            <p>Muchas gracias! Pronto recibirás toda la información de nuestro programa!</p>
-        </div>
-    </div>
-
     <form class="ml-block-form" action="https://app.mailerlite.com/webforms/submit/u7a6d5" data-code="u7a6d5" method="POST">
 
     <div class="subscribe-form">
-        <div class="form-section">
-            <h4></h4>
-            <p></p>
-        </div>
 
         <div class="form-section">
 
@@ -118,7 +120,7 @@
 					</div>        	
 
 					<div class="form-group col-sm-3">
-						<input type="text" name="fields[email]" class="form-control" placeholder="Correo Electrónico" value="">
+						<input type="text" name="fields[email]" class="form-control emailmailerlite" placeholder="Correo Electrónico" value="">
 					</div>        
 
 					<div class="form-group col-sm-3">
@@ -131,7 +133,7 @@
 
 		        <input type="hidden" name="ml-submit" value="1">
 
-		        <button type="submit" class="btn form-submit-button">
+		        <button type="submit" class="btn form-submit-button" >
 		            REGISTRARME
 		        </button>
 
@@ -148,13 +150,6 @@
 
     </form>
 
-
-    <script>
-        function ml_webform_success_1476509 () {
-                    jQuery('#mlb2-1476509').find('.ml-block-success').show();
-            jQuery('#mlb2-1476509').find('.ml-block-form').hide();
-                };
-    </script>
 
 </div>
 </div>
@@ -363,20 +358,9 @@
 <div id="mlb2-1476509" class="ml-subscribe-form">
 <div class="ml-vertical-align-center">
     
-    <div class="subscribe-form ml-block-success" style="display:none">
-        <div class="form-section">
-            <h4></h4>
-            <p>Muchas gracias! Pronto recibirás toda la información de nuestro programa!</p>
-        </div>
-    </div>
-
     <form class="ml-block-form" action="https://app.mailerlite.com/webforms/submit/u7a6d5" data-code="u7a6d5" method="POST">
 
     <div class="subscribe-form">
-        <div class="form-section">
-            <h4></h4>
-            <p></p>
-        </div>
 
         <div class="form-section">
 
@@ -385,7 +369,7 @@
 					</div>        	
 
 					<div class="form-group col-sm-3">
-						<input type="text" name="fields[email]" class="form-control" placeholder="Correo Electrónico" value="">
+						<input type="text" name="fields[email]" class="form-control emailmailerlite" placeholder="Correo Electrónico" value="">
 					</div>        
 
 					<div class="form-group col-sm-3">
@@ -398,7 +382,7 @@
 
 		        <input type="hidden" name="ml-submit" value="1">
 
-		        <button type="submit" class="btn form-submit-button">
+		        <button type="submit" class="btn form-submit-button" >
 		            REGISTRARME
 		        </button>
 
@@ -415,13 +399,6 @@
 
     </form>
 
-
-    <script>
-        function ml_webform_success_1476509 () {
-                    jQuery('#mlb2-1476509').find('.ml-block-success').show();
-            jQuery('#mlb2-1476509').find('.ml-block-form').hide();
-                };
-    </script>
 
 </div>
 </div>
@@ -500,7 +477,7 @@
 		});
 	});
 	$('form').on('click', 'button.form-submit-button', function(event){
-		var inputEmail = $(this).parent().parent().find('input[type=text]').val();
+		var inputEmail = $(this).parent().parent().find('input[type=text].emailmailerlite').val();
 		console.log(inputEmail);
 		if( inputEmail == ""){
 			event.preventDefault();
@@ -511,13 +488,13 @@
 			$( ".ml-block-form" ).submit(function( event ) {
 			  
 				  event.preventDefault();
-
+				  $('.modal.fade.bs-example-modal-lg').modal('show')
 			    $.ajax({
 			        url: "https://app.mailerlite.com/webforms/submit/u7a6d5",
 			        type: 'POST',
 			        data: $(this).serialize(),
 			        success: function(data) {
-			            alert( "Handler for .submit() called." );
+			            // alert( "Su solicitud de registro ha sido enviada, nos pondremos en contacto en el menor tiempo posible. Muchas Gracias!" );
 			        }
 			    });
 
