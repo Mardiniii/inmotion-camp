@@ -116,7 +116,7 @@
         <div class="form-section">
 
 					<div class="form-group col-sm-3">
-						<input type="text" name="fields[name]" class="form-control" placeholder="Nombre" value="">
+						<input type="text" name="fields[name]" class="form-control namemailerlite" placeholder="Nombre" value="">
 					</div>
 
 					<div class="form-group col-sm-3">
@@ -124,7 +124,7 @@
 					</div>
 
 					<div class="form-group col-sm-3">
-						<input type="text" name="fields[phone]" class="form-control" placeholder="Teléfono" value="">
+						<input type="text" name="fields[phone]" class="form-control phonemailerlite" placeholder="Teléfono" value="">
 					</div>
         </div>
 
@@ -353,7 +353,7 @@
 	        					<div class="form-section">
 
 											<div class="form-group col-sm-3">
-												<input type="text" name="fields[name]" class="form-control" placeholder="Nombre" value="">
+												<input type="text" name="fields[name]" class="form-control namemailerlite" placeholder="Nombre" value="">
 											</div>
 
 											<div class="form-group col-sm-3">
@@ -361,7 +361,7 @@
 											</div>
 
 											<div class="form-group col-sm-3">
-												<input type="text" name="fields[phone]" class="form-control" placeholder="Teléfono" value="">
+												<input type="text" name="fields[phone]" class="form-control phonemailerlite" placeholder="Teléfono" value="">
 											</div>
 						        </div>
 
@@ -406,8 +406,15 @@
 				<h1 class="wow fadeInLeftBig text-center second_section_title">Contactanos</h1>
 				<h1> Email: info@inmotion.camp <br>Cel: (+57) 316-477-2212<br></h1>
 			</div>
+			<div class="col-sm-2 text">
+				<br><h3 style="color:white">Siguenos en Facebook:</h3>
+				<a href="http://www.facebook.com/inmotionbootcamp" target="_blank"><img src="assets/img/facebook.png" alt="" style="width:300px; hight:300px"></a>
+			</div>
 		</div>
 	</div>
+	<br>
+	<br>
+	<br>
 </div>
 <!-- end of Contactanos-->
 
@@ -479,10 +486,14 @@
 	});
 	$('form').on('click', 'button.form-submit-button', function(event){
 		var inputEmail = $(this).parent().parent().find('input[type=text].emailmailerlite').val();
+		var inputName = $(this).parent().parent().find('input[type=text].namemailerlite').val();
+		var inputPhone = $(this).parent().parent().find('input[type=text].phonemailerlite').val();
 		console.log(inputEmail);
-		if( inputEmail == ""){
+		console.log(inputName);
+		console.log(inputPhone);
+		if( inputEmail == "" || inputPhone == "" || inputName == ""){
 			event.preventDefault();
-			alert("Porfavor ingrese una dirección de correo electrónico para confirmar su registro");
+			alert("Por favor asegurese de llenar todos los campos para asi confirmar su registro");
 		}
     else {
 
