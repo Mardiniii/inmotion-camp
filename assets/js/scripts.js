@@ -90,7 +90,7 @@ jQuery(window).load(function() {
 	/*
 		Hidden images
 	*/
-	$(".modal-body img, .testimonial-image img").attr("style", "width: auto !important; height: auto !important;");
+	/*$(".modal-body img, .testimonial-image img").attr("style", "width: auto !important; height: auto !important;");*/
 	
 });
 
