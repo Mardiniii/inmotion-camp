@@ -13,7 +13,6 @@
 	
 	.testimonial-list .testimonial-image { width: 20%; }
 	.testimonial-list .testimonial-text { width: 80%; }
-	
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
@@ -86,6 +85,12 @@
 @media (max-width: 415px) {
 	
 	h1, h2 { font-size: 32px; }
+
+}
+
+@media (min-width: 1200px) {
+
+	.fix-section { height: 350px }
 
 }
 
