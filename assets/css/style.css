@@ -881,7 +881,7 @@ a.video-link {
 }
 
 div.video-intro {
-	height: 70vh;
+	/*height: 70vh;*/
 	padding-top: 0;
 	padding-bottom: 0;
 }
