@@ -295,7 +295,7 @@ ul.navbar-nav {
 
 .form-top {
 	overflow: hidden;
-	padding: 0 25px 15px 25px;
+	padding: 0 25px 55px 25px;
 	background: #ff4051;
 	border-bottom: 1px solid #d43543;
 	text-align: left;
@@ -858,7 +858,7 @@ div.features {
 	margin-top: 60px;
 }
 
-div.#mediaModal {
+div#mediaModal {
 	margin-top: 75px;
 }
 
@@ -882,8 +882,8 @@ a.video-link {
 
 div.video-intro {
 	/*height: 70vh;*/
-	padding-top: 0;
-	padding-bottom: 0;
+	padding-top: 80px;
+	padding-bottom: 60px;
 }
 
 h1.video-text {
@@ -924,11 +924,11 @@ div.final-form-title div.form-top {
 
 img#final_logo {
 	margin-top: 70px;
-	margin-bottom: 100px;
+	margin-bottom: 50px;
 }
 
 div#final_form{
-	margin-top: 70px;
+	margin-top: 50px;
 }
 
 div.modal-body {
@@ -941,6 +941,14 @@ div.section-container-gray-bg {
 
 h1.second_section_title {
 	font-size: 50px;
-	font-weight: 300;
+	font-weight: 500;
 	padding-bottom: 50px;
+	color: #fff;
+}
+.top-content2 {
+	padding: 170px 0 0;
+	color: #fff;
+}
+.top-content2 h1 {
+	color: #fff;
 }
