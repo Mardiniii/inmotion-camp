@@ -882,8 +882,8 @@ a.video-link {
 
 div.video-intro {
 	/*height: 70vh;*/
-	padding-top: 80px;
-	padding-bottom: 60px;
+	padding-top: 40px;
+	padding-bottom: 50px;
 }
 
 h1.video-text {
@@ -946,7 +946,7 @@ h1.second_section_title {
 	color: #fff;
 }
 .top-content2 {
-	padding: 170px 0 0;
+	padding: 60px 0 0;
 	color: #fff;
 }
 .top-content2 h1 {
