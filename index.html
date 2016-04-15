@@ -468,8 +468,8 @@
     else {
 			$( ".ml-block-form" ).submit(function( event ) {
 				  event.preventDefault();
-				  $('.modal.fade.bs-example-modal-lg').modal('show')
-
+				  // $('.modal.fade.bs-example-modal-lg').modal('show')
+				  // Redirect to thanks page after submit form
 			    $.ajax({
 			        url: "https://app.mailerlite.com/webforms/submit/u7a6d5",
 			        type: 'POST',
@@ -478,6 +478,7 @@
 			            // alert( "Su solicitud de registro ha sido enviada, nos pondremos en contacto en el menor tiempo posible. Muchas Gracias!" );
 			        }
 			    });
+			    window.location="gracias.html";
 				});
 		// 	alert("Su solicitud de registro ha sido enviada, nos pondremos en contacto en el menor tiempo posible. Muchas Gracias!");
 		}
